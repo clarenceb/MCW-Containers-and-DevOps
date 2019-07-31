@@ -409,7 +409,7 @@ In this task, you will update the packages and install Docker engine.
 2. Update the Ubuntu packages and install curl and support for repositories over HTTPS in a single step by typing the following in a single line command. When asked if you would like to proceed, respond by typing "Y" and pressing enter.
 
     ``` bash
-    sudo apt-get update && sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    sudo apt-get update && sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
     ```
 
 3. Add Docker's official GPG key by typing the following in a single line command:
@@ -427,15 +427,15 @@ In this task, you will update the packages and install Docker engine.
 5. Add NodeJs PPA to use NodeJS LTS release and update the Ubuntu packages and install Docker engine, node.js and the node package manager in a single step by typing the following in a single line command. When asked if you would like to proceed, respond by typing "Y" and pressing enter.
 
     ``` bash
-    sudo apt-get install curl python-software-properties
+    sudo apt-get install -y curl python-software-properties
     curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-    sudo apt-get update && sudo apt install docker-ce nodejs mongodb-clients
+    sudo apt-get update && sudo apt install -y docker-ce nodejs mongodb-clients
     ```
 
 6. Now, upgrade the Ubuntu packages to the latest version by typing the following in a single line command. When asked if you would like to proceed, respond by typing "Y" and pressing enter.
 
     ``` bash
-    sudo apt-get upgrade
+    sudo apt-get upgrade -y
     ```
 
 7. Install `docker-compose`
@@ -464,7 +464,7 @@ In this task, you will update the packages and install Docker engine.
 10. Install `bower`
 
     ```bash
-    npm install -g bower
+    sudo npm install -g bower
     sudo ln -s /usr/bin/nodejs /usr/bin/node
     ```
 
@@ -522,8 +522,8 @@ In later exercises, you will need the Azure CLI 2.0 to connect to your Kubernete
 
     curl -L https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 
-    sudo apt-get install apt-transport-https
-    sudo apt-get update && sudo apt-get install azure-cli
+    sudo apt-get install -y apt-transport-https
+    sudo apt-get update && sudo apt-get install -y azure-cli
     ```
 
 ### Task 10: Install Kubernetes CLI
