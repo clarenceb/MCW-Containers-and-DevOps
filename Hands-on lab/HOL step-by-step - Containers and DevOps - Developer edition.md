@@ -1055,21 +1055,21 @@ In this task, you will gather the information you need about your Azure Kubernet
     http://localhost:8001
     ```
 
-Alternatively, from the Azure Portal, open the Cloud Shell and type:
+* Alternatively, from the Azure Portal, open the Cloud Shell and type:
 
-```sh
-az aks get-credentials --name fabmedical-SUFFIX --resource-group fabmedical-SUFFIX
-az aks browse --name fabmedical-SUFFIX --resource-group fabmedical-SUFFIX
-```
+    ```sh
+    az aks get-credentials --name fabmedical-SUFFIX --resource-group fabmedical-SUFFIX
+    az aks browse --name fabmedical-SUFFIX --resource-group fabmedical-SUFFIX
+    ```
 
-You'll see a URL with a FQDN in the output like so:
+* You'll see a URL with a FQDN in the output like so:
 
-```
-To view the console, please open https://gateway12.southeastasia.console.azure.com/n/cc-3b79ag71/cc-3b79ag71/proxy/8001/ in a new tab
-Press CTRL+C to close the tunnel...
-```
+    ```
+    To view the console, please open https://gateway12.southeastasia.console.azure.com/n/cc-3b79ag71/cc-3b79ag71/proxy/8001/ in a new tab
+    Press CTRL+C to close the tunnel...
+    ```
 
-A new tab to the Kubernetes Dashboard should automatically open in your browser.
+* A new tab to the Kubernetes Dashboard should automatically open in your browser.
 
 10. If the tunnel is successful, you will see the Kubernetes management dashboard.
 
